@@ -1,0 +1,176 @@
+/* General */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Agenor Neue', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000000;
+    background: #f8fafa;
+    min-height: 100vh;
+}
+
+img {
+    width: 100%;
+}
+
+/* Contents */
+.container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.design-left {
+    width: 40%;
+    position: relative;
+}
+
+.design-left>img {
+    height: 100vh;
+}
+
+.design-left>.credits {
+    font-size: 0.9rem;
+    color: #cfccc4;
+    position: absolute;
+    bottom: 2%;
+    left: 35%;
+}
+
+.credits>a {
+    color: #cfccc4;
+}
+
+.bg-logo {
+    background: rgba(0, 0, 0, 0.5);
+    font-family: 'Norse', sans-serif;
+    font-size: 110px;
+    font-weight: 700;
+    color: #fefffe;
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.bg-logo>img {
+    width: 15%;
+    height: 90%;
+}
+
+.contents-right {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+}
+
+.promesses {
+    font-size: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 50px;
+}
+
+form {
+    width: 100%;
+}
+
+.form-container {
+    background: #fefffe;
+    display: grid;
+    grid-template-columns: repeat(2, max(300px));
+    grid-template-rows: repeat(4, 1fr);
+    align-items: center;
+    gap: 20px;
+    column-gap: 80px;
+    padding: 20px 50px 50px 50px;
+    box-shadow: 0px 0px 10px 0px #dcdddd;
+}
+
+.form-container>p {
+    font-size: 28px;
+    grid-column: 1 / span 2;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #686f78;
+    text-transform: uppercase;
+}
+
+input {
+    width: 100%;
+    height: 35px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    padding-left: 10px;
+    border: 1px solid #E5E7EB;
+    outline: none;
+}
+
+input:focus {
+    border-color: #4a6fd7;
+    box-shadow: 5px 5px 15px 0px #e2e3e3;
+}
+
+input.error:valid {
+    border-color: green;
+}
+
+.error {
+    border: 1px solid red;
+}
+
+#password-error {
+    color: red;
+}
+
+.btn-account {
+    width: 100%;
+    padding-left: 50px;
+    margin-top: 40px;
+}
+
+.btn-account>button {
+    width: 22%;
+    height: 55px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    background: #dca66e;
+    border: none;
+    border-radius: 7px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.btn-account>p {
+    font-size: 1.1rem;
+}
+
+.btn-account>p>a {
+    color: #dca66e;
+    text-decoration: none;
+}

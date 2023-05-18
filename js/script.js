@@ -8,6 +8,7 @@ const passwordError = document.querySelector('#password-error');
 /***********************
 /*         Functions
 /**********************/
+// Validate if the password input match the confirm password input
 function validatePassword() {
 	const password = passwordInput.value;
 	const confirmPassword = confirmPasswordInput.value;
